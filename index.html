@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinique ZINARIA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Clinique ZINARIA</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#connexion">Se connecter (Personnel)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil">
+        <h2>Bienvenue à la Clinique ZINARIA</h2>
+        <p>Des soins de qualité pour tous.</p>
+        <!-- Place for photo -->
+        <img src="photo_acceuil.jpg" alt="Photo d'accueil" class="responsive-img">
+    </section>
+
+    <section id="services">
+        <h2>Nos Services</h2>
+        <center>
+            <ul>
+                <li>Consultations générales</li>
+                <li>Soins spécialisés</li>
+                <li>Urgences</li>
+            </ul>
+            <!-- Place for photo -->
+            <img src="photo_service.png" alt="Photo des services" class="responsive-img">
+    </section>
+
+    <section id="reservation">
+        <h2>Prendre Rendez-Vous</h2>
+        <form id="reservationForm">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" required>
+
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" required>
+
+            <label for="telephone">Numéro de Téléphone:</label>
+            <input type="tel" id="telephone" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Heure:</label>
+            <input type="time" id="time" required>
+
+            <label for="doctor">Médecin:</label>
+            <select id="doctor" required>
+                <option value="generaliste">Médecin Généraliste</option>
+                <option value="specialiste">Médecin Spécialiste</option>
+            </select>
+
+            <button type="submit">Réserver</button>
+        </form>
+        <!-- Place for photo -->
+        <!--<img src="photo reservation.jpg" alt="Photo de réservation" class="responsive-img"> -->
+    </section>
+
+    <section id="avis">
+        <h2>Avis des Patients</h2>
+        <div id="feedback">
+            <form id="feedbackForm">
+                <label for="stars">Évaluation:</label>
+                <select id="stars" required>
+                    <option value="1">⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                </select>
+
+                <label for="comments">Commentaire:</label>
+                <textarea id="comments" required></textarea>
+
+                <button type="submit">Soumettre</button>
+            </form>
+            <p id="totalFeedback"></p>
+        </div>
+
+    </section>
+
+    <section id="sondage">
+        <h2>Sondage</h2>
+        <p>Nous aimerions connaître votre opinion sur nos services.</p>
+        <form id="surveyForm">
+            <label>Comment évalueriez-vous nos services ?</label>
+            <input type="radio" id="excellent" name="rating" value="excellent" required>
+            <label for="excellent">Excellent</label>
+
+            <input type="radio" id="good" name="rating" value="good" required>
+            <label for="good">Bien</label>
+
+            <input type="radio" id="average" name="rating" value="average" required>
+            <label for="average">Moyen</label>
+
+            <input type="radio" id="poor" name="rating" value="poor" required>
+            <label for="poor">Médiocre</label>
+
+            <button type="submit">Soumettre</button>
+        </form>
+        <p id="totalSurvey"></p>
+        <!-- Place for photo -->
+        <img src="photo_sondage.png" alt="Photo du sondage" class="responsive-img">
+    </section>
+
+    <section id="connexion">
+        <h2>Connexion (Personnel)</h2>
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" required>
+
+            <button type="submit">Se connecter</button>
+        </form>
+    </section>
+    <section id="localisation">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.9788744023883!2d1.2100447000000074!3d6.269287200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10215717f73613e7%3A0x9ffaee6ea2348404!2sCLINIQUE%20ZINARIA!5e0!3m2!1sfr!2stg!4v1738587144344!5m2!1sfr!2stg"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Clinique ZINARIA. Tous droits réservés.</p>
+        <div class="footer-links">
+            <a href="#accueil">Accueil</a> |
+            <a href="#services">Services</a> |
+            <a href="#contact">Contact</a> |
+            <a href="#connexion">Se connecter (Personnel)</a>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
